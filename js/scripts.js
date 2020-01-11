@@ -7,10 +7,10 @@ var squirtle = {
   type: 'water',
 };
 
-var charmander = {
-  name: 'Charmander',
-  height: 0.6,
-  type: 'fire',
+var umbreon = {
+  name: 'Umbreon',
+  height: 1,
+  type: 'dark',
 };
 
 var venomoth = {
