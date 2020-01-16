@@ -29,3 +29,11 @@ var jolteon = {
   height: 0.8,
   type: 'electric',
 };
+
+for (var i = 0; i < 5; i++){
+  if (i == 0){
+    document.write(name + height);
+  } else{
+    document.write('') 
+  }
+}
