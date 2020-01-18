@@ -1,39 +1,28 @@
-var repository = [
-  squirtle,
-  umbreon,
-  venomoth,
-  jolteon,
-];
-//this array will become the repository of Pokémon to display in my application
+var repository = ['squirtle', 'umbreon', 'venomoth', 'jolteon']{
+  {
+    name: 'Squirtle',
+    height: 0.5,
+    type: ['water'],
+  }
+  {
+    name: 'Umbreon',
+    height: 1,
+    type: ['dark'],
+  }
+  {
+    name: 'Venomoth',
+    height: 1.5,
+    type: ['bug, poison'],
+  }{
+    name: 'Jolteon',
+    height: 0.8,
+    type: ['electric'],
+  }
+}
 
-var squirtle = {
-  name: 'squirtle',
-  height: 0.5,
-  type: 'water',
-};
 
-var umbreon = {
-  name: 'umbreon',
-  height: 1,
-  type: 'dark',
-};
-
-var venomoth = {
-  name: 'venomoth',
-  height: 1.5,
-  type: 'bug, poison',
-};
-
-var jolteon = {
-  name: 'jolteon',
-  height: 0.8,
-  type: 'electric',
-};
-
-for (var i = 0; i < 5; i++){
+for( var i = 0; i < 5; i++){
   if (i == 0){
-    document.write(name + height);
-  } else{
-    document.write('') 
+    document.write(i + height)
   }
 }
