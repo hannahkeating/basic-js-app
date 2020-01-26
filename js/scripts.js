@@ -21,12 +21,6 @@ var repository = [
   }
 ]
 
-for( var i = 0; i < 4; i++){
-  const pokemon = repository[i]
-  let message = `${pokemon.name} (height: ${pokemon.height})`
-  if (pokemon.height === 1.5) {
-    message = message + "-Wow, that's big!"
-  }
-
-  document.write(`<div>${message}</div>`)
-}
+repository.forEach(function(pokemon){
+  document.write(pokemon.name + ': ' + pokemon.height + ', ' + '(' + pokemon.type + ')' + '<br>');
+});
