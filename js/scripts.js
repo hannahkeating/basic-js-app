@@ -21,11 +21,11 @@ var pokemonRepository = (function(){
       type: ['electric'],
     }
   ];
-  function getAll(pokemon) {
-    return repsitory;
+  function getAll() {
+    return repository;
   }
   function add(pokemon) {
-    repsitory.push(pokemon);
+    repository.push(pokemon);
   }
 
   return {
@@ -34,6 +34,6 @@ var pokemonRepository = (function(){
   };
 })();
 
-pokemonRepository.forEach(getAll(pokemon){
+pokemonRepository.getAll().forEach(function(pokemon){
   document.write(pokemon.name + ': ' + pokemon.height + ', ' + '(' + pokemon.type + ')' + '<br>');
-};
+})
