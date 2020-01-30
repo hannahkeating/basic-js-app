@@ -34,6 +34,6 @@ var pokemonRepository = (function(){
   };
 })();
 
-pokemonRepository.forEach(function getAll(pokemon){
+pokemonRepository.forEach(getAll(pokemon){
   document.write(pokemon.name + ': ' + pokemon.height + ', ' + '(' + pokemon.type + ')' + '<br>');
-});
+};
