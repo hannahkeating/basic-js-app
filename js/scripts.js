@@ -1,4 +1,4 @@
-var pokemonRepository = (function(){
+var pokemonRepository = (function(){ //beginning of IIFE
   var repository = [
     {
       name: 'Squirtle',
@@ -27,13 +27,23 @@ var pokemonRepository = (function(){
   function add(pokemon) {
     repository.push(pokemon);
   }
+  function addListItem(pokemon){
+  }
 
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addListItem: addListItem
   };
 })();
+var $pokemonList = document.querySelector('.pokemon-list');
 
 pokemonRepository.getAll().forEach(function(pokemon){
-  document.write(pokemon.name + ': ' + pokemon.height + ', ' + '(' + pokemon.type + ')' + '<br>');
+  var $listItem = document.createElement('li');
+  var $button = document.createElement('button');
+  $button.innerText = pokemon.name;
+  $button.classList.add('button');
+  $listItem.classList.add('li-style');
+  $pokemonList.appendChild($listItem);
+  $listItem.appendChild($button);‹›
 })
