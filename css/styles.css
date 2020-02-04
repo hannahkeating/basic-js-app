@@ -1,20 +1,23 @@
 body {
   color: #00334d;
-  background-color: #e6e6e6;
+  background-color: #f3e44a;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
 .button{
-  background-color: #adacac;
-  color: #6e0e0e;
+  background-color: #288626;
+  color: #fff;
   font-family:inherit;
   font-size: 100%;
   width: 100%;
   height: 50px;
+  border: 2px solid white;
   border-radius: 25px;
 }
 .li-style{
   list-style-type: none;
   text-align:center;
   padding: 2px;
+  font-size: inherit;
 }
