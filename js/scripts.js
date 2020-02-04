@@ -36,11 +36,18 @@ var pokemonRepository = (function(){
     $listItem.classList.add('li-style');
     $pokemonList.appendChild($listItem);
     $listItem.appendChild($button);
+    $button.addEventListener('click', function (event){
+      showDetails(pokemon);
+    })
+  }
+  function showDetails(pokemon){
+    console.log(pokemon);
   }
   return {
     add: add,
     getAll: getAll,
-    addListItem: addListItem
+    addListItem: addListItem,
+    showDetails: showDetails
   };
 })();
 
