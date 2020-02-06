@@ -31,14 +31,14 @@ var pokemonRepository = (function(){
     var $pokemonList = document.querySelector('.pokemon-list');
     var $listItem = document.createElement('li');
     var $button = document.createElement('button');
+    $button.addEventListener('click', function (event){
+      showDetails(pokemon);
+    })
     $button.innerText = pokemon.name;
     $button.classList.add('button');
     $listItem.classList.add('li-style');
     $pokemonList.appendChild($listItem);
     $listItem.appendChild($button);
-    $button.addEventListener('click', function (event){
-      showDetails(pokemon);
-    })
   }
   function showDetails(pokemon){
     console.log(pokemon);
