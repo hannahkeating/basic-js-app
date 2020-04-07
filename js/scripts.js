@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 //begins IIFE
 var pokemonRepository = (function () {
   var repository = [];
@@ -53,7 +54,7 @@ var pokemonRepository = (function () {
       });
     }).catch(function (e) {
       console.error(e);
-    })
+    });
   }
     function loadDetails(pokemon) {
     var url = pokemon.detailsUrl;
@@ -120,7 +121,7 @@ var pokemonRepository = (function () {
     if (e.key === 'Escape' && $modalContainer.classList.contains('is-visible')) {
       hideModal();
     }
-  })
+  });
 
   //click outside of the modal to close
   $modalContainer.addEventListener('click', (e) => {
@@ -129,7 +130,7 @@ var pokemonRepository = (function () {
     if (target === $modalContainer) {
       hideModal();
     }
-  })
+  });
 
   return {
     add: add,
